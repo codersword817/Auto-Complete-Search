@@ -33,4 +33,20 @@
 .search-container {
   /* background-color: yellow; */
   width: 25vw;
+  /* border-radius: 2rem; */
+}
+
+.search-item {
+  width: 100%;
+  text-align: center;
+}
+
+.search-item {
+  background-color: rgb(239, 233, 233);
+  /* border: 1px solid black; */
+  /* border-radius: 2rem; */
+}
+
+.search-item:hover {
+  background-color: rgb(218, 213, 213);
 }
