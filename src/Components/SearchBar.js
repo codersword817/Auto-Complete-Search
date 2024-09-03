@@ -1,16 +1,15 @@
 import { useState } from "react";
 
 const SearchBar = () => {
-  const fruitsData = ["Apple", "Mango", "Banana", "Pineapple"];
+  const fruitsData = ["Apple", "Mango", "Banana", "Pineapple", "Orange"];
   const [data, setData] = useState(fruitsData);
-  let id = 0;
   return (
     <>
       <div className="text-container">
         <div>
           <h3>Auto Complete Search </h3>
         </div>
-        <div>
+        <div className="search-container">
           <input
             type="text"
             name="search-bar"
@@ -24,15 +23,15 @@ const SearchBar = () => {
               );
             }}
           />
-        </div>
-        <div>
-          {data.map((e) => {
-            return (
-              <>
-                <div>{e}</div>
-              </>
-            );
-          })}
+          <div className="search-items">
+            {data.map((e) => {
+              return (
+                <>
+                  <div>{e}</div>
+                </>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
